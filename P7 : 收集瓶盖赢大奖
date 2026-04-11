@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    int lucky, encourage;
+
+    std::cin >> lucky >> encourage;
+
+    if (lucky >= 10 || encourage >= 20) {
+        std::cout << 1 << std::endl;
+    } else {
+        std::cout << 0 << std::endl;
+    }
+
+    return 0;
+}
