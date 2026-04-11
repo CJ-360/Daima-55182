@@ -9,7 +9,6 @@ int main() {
     } else if (N == 0) {
         std::cout << "zero" << std::endl;
     } else {
-        // 如果 N 不大于 0 且 N 不等于 0，那它一定小于 0
         std::cout << "negative" << std::endl;
     }
 
