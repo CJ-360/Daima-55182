@@ -1,0 +1,16 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+    using namespace std;
+    double area;
+    cout<<"enter area :";
+    cin>>area;
+    double side;
+    side=sqrt(area);
+    cout<<"area is "<<side<<side
+        <<" How fascinating!"<<endl;
+    return 0;
+}
