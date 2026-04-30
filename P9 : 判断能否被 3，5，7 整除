@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n;
+    if (!(cin >> n)) return 0;
+
+    vector<int> divisors; 
+    if (n % 3 == 0) {
+        divisors.push_back(3);
+    }
+    if (n % 5 == 0) {
+        divisors.push_back(5);
+    }
+    if (n % 7 == 0) {
+        divisors.push_back(7);
+    }
+
+    if (divisors.empty()) {
+        cout << "n" << endl;
+    } else {
+        for (int i = 0; i < divisors.size(); i++) {
+            cout << divisors[i];
+            if (i < divisors.size() - 1) {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
